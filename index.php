@@ -53,7 +53,7 @@ $result = $conn->query($sql);
   if ($result->num_rows > 0) {
     // output data of each row
     while ($row = $result->fetch_assoc()) { ?>
-      <table align="center" width="50%" cellspacing="0" cellpadding="0" border="1">
+      <table class="item-list" >
         <tr>
           <td width="100" align="center"><img src="foto/<?php echo $row["foto"] ?>" height="70" width="70" border="0"
               alt="[Rozmiar: 4189 bajtów]"></td>
