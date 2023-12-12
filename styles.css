@@ -46,7 +46,15 @@ select {
     background-color: #e98000;
     font-weight: bold;
 }
+.narz_button{
+
+    margin: 20px;
+    padding: 20px;
+    border-radius: 50px;
+    background-color: #e4ab65;
+    font-weight: bold;
+}
 .tablica {
     color: #aaa;
-    align="center";
+
 }

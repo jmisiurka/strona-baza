@@ -61,13 +61,13 @@ $result = $conn->query($sql);
         <tr>
           <td width="100 align="center"><img src="foto/<?php echo $row["foto"] ?>" height="70" width="70" border="0"
               alt="[Rozmiar: 4189 bajtów]"></td>
-          <td width="100" align="center"><a href='narzedzie_par.php?id=<?php echo $row["id"]; ?>' class="link_do_narz">
-              <?php echo $row["id"]; ?>
+          <td  width="100" align="center"><a href='narzedzie_par.php?id=<?php echo $row["id"]; ?>'class="narz_button" class="link_do_narz">
+              <?php echo $row["id"];?>
             </a></td>
           <td width="100" align="center">
             <?php echo $row["tool_type"]; ?>
           </td>
-          <td width="100">
+          <td width="100" align="center">
             <?php echo $row["materiał"]; ?>
           </td>
           <td width="80" align="center"> <img src="foto/<?php echo $row["qr"] ?>" height="75" width="75" border="0"
