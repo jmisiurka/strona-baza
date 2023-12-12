@@ -7,6 +7,10 @@ $sql = "SELECT DISTINCT tool_type
 $tool_types = $conn->query($sql);
 ?>
 
+<div align="right">
+  <a href="nowe_narzedzie.php" class="button">Nowe narzędzie</a>
+</div>
+
 <div class="container">
   <h2>Wybierz narzędzie</h2><br><br>
   <form name="form" action="wybor_zestawu.php" method="post">
