@@ -53,9 +53,9 @@ $result = $conn->query($sql);
   if ($result->num_rows > 0) {
     // output data of each row
     while ($row = $result->fetch_assoc()) { ?>
-      <table class="item-list" >
+      <table align="center" width="50%" cellspacing="0" cellpadding="0" border="1">
         <tr>
-          <td width="100" align="center"><img src="foto/<?php echo $row["foto"] ?>" height="70" width="70" border="0"
+          <td width="100 align="center"><img src="foto/<?php echo $row["foto"] ?>" height="70" width="70" border="0"
               alt="[Rozmiar: 4189 bajtów]"></td>
           <td width="50" align="center"><a href='narzedzie_par.php?id=<?php echo $row["id"]; ?>' class="link_do_narz">
               <?php echo $row["id"]; ?>
