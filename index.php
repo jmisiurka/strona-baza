@@ -11,13 +11,13 @@ $tool_types = $conn->query($sql);
   <a href="nowe_narzedzie.php" class="button">Nowe narzędzie</a>
 </div>
 
-<div class="container" >
+<div align="center" class="container">
   <h2>Wybierz narzędzie </h2><br><br>
-  <form name="form" action="wybor_zestawu.php" method="post" >
+  <form name="form" action="wybor_zestawu.php" method="post">
     <select name="tool">
       <?php
       while ($tool_type = $tool_types->fetch_assoc()) { ?>
-        <option value="<?php echo $tool_type["tool_type"]  ?>"align="center">
+        <option value="<?php echo $tool_type["tool_type"]  ?>"align="center" >
           <?php echo $tool_type["tool_type"] ?>
         </option>
       <?php } ?>
@@ -59,7 +59,7 @@ $result = $conn->query($sql);
     while ($row = $result->fetch_assoc()) { ?>
       <table class="tablica" align="center" width="80%" cellspacing="0" cellpadding="10" border="5">
         <tr>
-          <td width="100 align="center"><img src="foto/<?php echo $row["foto"] ?>" height="70" width="70" border="0"
+          <td width="100" align="center"><img src="foto/<?php echo $row["foto"] ?>" height="70" width="70" border="0"
               alt="[Rozmiar: 4189 bajtów]"></td>
           <td  width="100" align="center"><a href='narzedzie_par.php?id=<?php echo $row["id"]; ?>'class="button" class="link_do_narz">
               <?php echo $row["id"];?>
