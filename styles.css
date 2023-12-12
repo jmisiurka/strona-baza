@@ -3,6 +3,7 @@
     max-width: 600px;
     margin: 0;
     padding: 20px;
+    
 }
 body{
     background-color: #1d1104;
@@ -44,4 +45,7 @@ select {
     border-radius: 25px;
     background-color: #e98000;
     font-weight: bold;
+}
+.tablica {
+    color: #aaa;
 }
