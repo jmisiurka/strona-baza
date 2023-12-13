@@ -1,10 +1,9 @@
 .container {
     width: 50%;
     margin: 0 auto
-
-    
 }
-body{
+
+body {
     background-color: #1d1104;
 }
 
@@ -16,7 +15,7 @@ h1 {
 }
 
 h2 {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     font-size: large;
     color: #555;
@@ -25,7 +24,8 @@ h2 {
 form {
     margin-top: 10px;
     color: #9a0202;
-    }
+}
+
 select {
     width: 100%;
     padding: 10px;
@@ -33,7 +33,7 @@ select {
     border-radius: 25px;
     font-size: 16px;
     color: #aaa;
-    background-color:#281600 ;
+    background-color: #281600;
 }
 
 .center-button {
@@ -45,7 +45,8 @@ select {
     background-color: #e98000;
     font-weight: bold;
 }
-.button{
+
+.button {
 
     margin: 20px;
     padding: 20px;
@@ -53,7 +54,11 @@ select {
     background-color: #e4ab65;
     font-weight: bold;
 }
+
 .tablica {
     color: #aaa;
+}
 
+.label {
+    color: #aaa;
 }
