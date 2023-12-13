@@ -6,13 +6,6 @@
 <br><br>
 
 <div align="center">
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    <form width=75% action="dodaj_do_bazy.php" method="post">
-        <table class="tablica">
-=======
-=======
->>>>>>> Stashed changes
     <form width=75% action="dodaj_narzedzie.php" method="post">
         <table>
 >>>>>>> Stashed changes
