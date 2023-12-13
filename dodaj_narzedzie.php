@@ -34,7 +34,7 @@ if (isset($_POST['cladding_id'])) {
 if (isset($_POST['qr'])) {
     $qr = $_POST['qr'];
 } else {
-    echo 'No qr';
+    echo '<p align="center">No qr</p>';
 }
 
 $conn->query('INSERT INTO tool (foto, materiał, tool_type, reg_cycles, id_cladd_prog, id_set, qr)
