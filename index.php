@@ -49,6 +49,7 @@ $tool_types = $conn->query($sql);
 
 <div align="right">
   <a href="nowe_narzedzie.php" class="button">Nowe narzędzie</a>
+  <a href="nowe_cladding_param.php" class="button">Nowe parametry pokrycia</a>
 </div>
 
 

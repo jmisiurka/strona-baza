@@ -1,7 +1,7 @@
 <?php include 'header.php'; ?>
 
 <div align="center">
-    <form width=75% action="dodaj_do_bazy_cp.php" method="post">
+    <form width=75% action="dodaj_cladding_param.php" method="post">
         <table>
             <tr>
                 <td>
@@ -13,7 +13,7 @@
             </tr>
             <tr>
                 <td>
-                    <p class=" label">Gaz</p>
+                    <p class="label">Gaz</p>
                 </td>
                 <td>
                     <input type="text" name="gas" /><br />
@@ -21,61 +21,41 @@
             </tr>
             <tr>
                 <td>
-                    <p class="label">Liczba cykli regeneracji</p>
+                    <p class="label">Natężenie [A]</p>
                 </td>
                 <td>
-                    <input type="number" name="reg_cycles" value=0 /><br />
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p class="label">Ścieżka zdjęcia</p>
-                </td>
-                <td>
-                    <input type="text" name="foto"/>
+                    <input type="number" name="current" value=230 />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <p class="label">Ścieżka kodu QR</p>
+                    <p class="label">Korekta napięcia [V]</p>
                 </td>
                 <td>
-                    <input type="text" name="qr" />
-                </td>
-            <tr>
-                <td>
-                    <p class="label">Parametry pokrycia</p>
-                </td>
-                <td>
-                    <select type="number" name="cladding_id">
-                        <?php
-                        $sql = "SELECT DISTINCT id FROM cladding_param";
-                        $claddings = $conn->query($sql);
-                        while ($cladding = $claddings->fetch_assoc()) { ?>
-                            <option value="<?php echo $cladding["id"] ?>">
-                                <?php echo $cladding["id"] ?>
-                            </option>
-                            <?php
-                        }
-                        ?>
+                    <input type="number" name="voltage_correct" value=1/>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <p class="label">Komplet</p>
+                    <p class="label">Przepływ gazu [l/min]</p>
                 </td>
                 <td>
-                    <select type="number" id="set_id" name="set_id">
-                        <?php
-                        $sql = "SELECT DISTINCT id, nazwa_kompletu FROM set_id";
-                        $sets = $conn->query($sql);
-                        while ($set = $sets->fetch_assoc()) { ?>
-                            <option value="<?php echo $set["id"] ?>">
-                                <?php echo $set["nazwa_kompletu"] ?>
-                            </option>
-                            <?php
-                        }
-                        ?>
+                    <input type="number" name="gas_flow" value=10/>
+                </td>
+            <tr>
+                <td>
+                    <p class="label">Nazwa programu robota</p>
+                </td>
+                <td>
+                    <input type="text" name="prog_name_robot"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="label">Nazwa programu źródłowego</p>
+                </td>
+                <td>
+                    <input type="text" name="prog_name_source"/>
                 </td>
             </tr>
         </table>
