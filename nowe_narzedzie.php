@@ -1,8 +1,12 @@
 <?php include 'header.php'; ?>
 
+<div align="right">
+  <a href="index.php" class="button">Powrót</a>
+</div>
+
 <div align="center">
     <form width=75% action="dodaj_do_bazy.php" method="post">
-        <table>
+        <table class="tablica">
             <tr>
                 <td>
                     <p class="label">Materiał</p>
@@ -101,4 +105,8 @@
         </table>
         <input type="submit" value="Dodaj" class="center-button" />
     </form>
+</div>
+
+<div align="right">
+  <a href="index.php" class="button">Powrót</a>
 </div>
