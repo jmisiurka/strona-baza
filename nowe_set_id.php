@@ -1,5 +1,9 @@
 <?php include 'header.php'; ?>
 
+<div align="right">
+  <a href="index.php" class="button">Powrót</a>
+</div>
+
 <div align="center">
     <form width=75% action="dodaj_set_id.php" method="post">
         <table>
@@ -23,3 +27,4 @@
         <input type="submit" value="Dodaj" class="center-button" />
     </form>
 </div>
+

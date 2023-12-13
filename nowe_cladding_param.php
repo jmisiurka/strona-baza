@@ -1,5 +1,9 @@
 <?php include 'header.php'; ?>
 
+<div align="right">
+  <a href="index.php" class="button">Powrót</a>
+</div>
+
 <div align="center">
     <form width=75% action="dodaj_cladding_param.php" method="post">
         <table>
