@@ -7,12 +7,10 @@ $sql = "SELECT DISTINCT tool_type
 $tool_types = $conn->query($sql);
 ?>
 
-<div align="right">
-  <a href="nowe_narzedzie.php" class="button">Nowe narzędzie</a>
-</div>
 
 <div align="center" class="container">
-  <h2>Wybierz narzędzie </h2><br><br>
+<br>
+<h2><b>Wybierz narzędzie</b><br><br></h2>
   <form name="form" action="wybor_zestawu.php" method="post">
     <select name="tool">
       <?php
@@ -32,8 +30,9 @@ $tool_types = $conn->query($sql);
         ORDER BY materiał";
   $materials = $conn->query($sql);
   ?>
+<br>
 
-  <h2>Wybierz materiał</h2><br><br>
+<h2><b>Wybierz materiał</b><br><br></h2>
   <form name="form" action="wybor_mat.php" method="post">
     <select name="materiał">
       <?php
@@ -48,16 +47,22 @@ $tool_types = $conn->query($sql);
   </form>
 </div>
 
+<div align="right">
+  <a href="nowe_narzedzie.php" class="button">Nowe narzędzie</a>
+</div>
+
+
 <?php
 $sql = "SELECT foto, id, tool_type, materiał,qr FROM tool";
 $result = $conn->query($sql);
 ?>
-
+<br><br>
   <?php
   if ($result->num_rows > 0) {
     // output data of each row
+    
     while ($row = $result->fetch_assoc()) { ?>
-      <table class="tablica" align="center" width="80%" cellspacing="0" cellpadding="10" border="5">
+      <table class="tablica" align="center" width="75%" cellspacing="0" cellpadding="10" border="5" method="post">
         <tr>
           <td width="100" align="center"><img src="foto/<?php echo $row["foto"] ?>" height="70" width="70" border="0"
               alt="[Rozmiar: 4189 bajtów]"></td>

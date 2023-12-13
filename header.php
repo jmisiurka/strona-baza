@@ -8,11 +8,11 @@
 
 <body>
 
-<div align="center">
+<!-- <div align="center">
 <a href="https://000webhostapp.com/">
 <img  src="foto/logo_kj.png" height="10%" width="18%" alt="[Rozmiar: 4189 bajtów]">
 </a>
-</div>
+</div> -->
 
 <?PHP 
 

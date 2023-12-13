@@ -53,6 +53,7 @@ $sql  = "SELECT * FROM tool JOIN set_id ON tool.id_set = set_id.id JOIN cladding
 <tr><td><b>Nazwa Kompletu</b></td><td><?php  echo $row["nazwa_kompletu"]?></td></tr>
 
 </table>
+<br><br>
 <div align="right">
   <a href="index.php" class="button">Powrót</a>
 </div>
